@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="am_contact_form" resource="default"  comment="Table for cutomer contact data">
+      <column xsi:type="int" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="ID" />
+      <column xsi:type="varchar" name="name"  comment="Name" />
+      <column xsi:type="varchar" name="email" comment="Email" />
+      <column xsi:type="varchar" name="phone_number" comment="Phone number" />
+      <column xsi:type="varchar" name="description"  comment="Description" />
+      <constraint xsi:type="primary" referenceId="PRIMARY">
+         <column name="id" />
+      </constraint>
+   </table>
+</schema>

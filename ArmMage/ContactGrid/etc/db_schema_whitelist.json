@@ -1,0 +1,14 @@
+{
+    "am_contact_form": {
+        "column": {
+            "id": true,
+            "name": true,
+            "email": true,
+            "phone_number": true,
+            "description": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

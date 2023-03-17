@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="ArmMage_ContactGrid::customer_contact" title="Contact" module="ArmMage_ContactGrid" sortOrder="1" parent="Magento_Customer::customer" resource="Magento_Customer::customer"/>
+        <add id="ArmMage_ContactGrid::customer_contacts" title="All Contacts" module="ArmMage_ContactGrid" sortOrder="2" parent="ArmMage_ContactGrid::customer_contact" action="contacts/index/index" resource="ArmMage_ContactGrid::contact" />
+    </menu>
+</config>

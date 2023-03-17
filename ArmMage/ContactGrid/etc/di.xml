@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Contact\Controller\Index\Post">
+         <plugin name='am_contact_form_plugin' type='ArmMage\ContactGrid\Plugin\ContactPlugin' />
+    </type>
+    <virtualType name="ArmMage\ContactGrid\Model\ResourceModel\ContactForm\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">am_contact_form</argument>
+            <argument name="resourceModel" xsi:type="string">ArmMage\ContactGrid\Model\ResourceModel\ContactForm</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="contacts_list_data_source" xsi:type="string">ArmMage\ContactGrid\Model\ResourceModel\ContactForm\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
