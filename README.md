@@ -1,4 +1,4 @@
-# contact-us--form-submission-module
+# magento2-contact-us--form-submission-module
 
 Contact Us Form Submission Module is the ultimate solution for managing and viewing all of your Contact Us form submissions in one place.
 
